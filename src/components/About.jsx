@@ -23,7 +23,7 @@ const About = () => {
   };
 
   return (
-    <section ref={ref} className="pt-16 pb-20">
+    <section ref={ref} className="pt-24 pb-[150px]">
       <div className="container mx-auto text-center animate-fadeIn pt-10 flex">
         <div className="flex w-full flex-col lg:flex-row items-center lg:items-start">
           <div className="xl:w-1/2 p-4 flex flex-col justify-center">
