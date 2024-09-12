@@ -32,12 +32,12 @@ const Header = () => {
         {/* Menú de Navegación */}
         <nav className="hidden md:flex space-x-8">
           <a
-            href="#services"
+            href="#missionVision"
             className={`text-lg  ${
               scrolled ? "text-black" : "text-white"
             } hover:text-blue-500 transition duration-300`}
           >
-            Servicios
+            Nuetros Pilares
           </a>
           <a
             href="#about"
@@ -48,12 +48,12 @@ const Header = () => {
             ¿Quiénes Somos?
           </a>
           <a
-            href="#contact"
-            className={`text-lg ${
+            href="#services"
+            className={`text-lg  ${
               scrolled ? "text-black" : "text-white"
             } hover:text-blue-500 transition duration-300`}
           >
-            Contáctanos
+            Servicios
           </a>
         </nav>
       </div>

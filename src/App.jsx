@@ -3,13 +3,12 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import WavyDiv from "./components/WavyDiv";
 import WavyDivGreen from "./components/WavyDivGreen";
 import WaviDivOndeado from "./components/WaviDivOndeado";
 import WhatsappButton from "./components/WhatsappButton";
+import MissionVisionSection from "./components/MissionVisionSection";
 import "./App.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -21,25 +20,26 @@ AOS.init({
 
 function App() {
   const [showContact, setShowContact] = useState(false);
+
   return (
     <>
       <Header />
       <Hero />
-      <WavyDiv />
-      <section id="services">
-        <Services />
+      <section id="missionVision" className="">
+        <MissionVisionSection />
       </section>
-      <WaviDivOndeado />
+      <WavyDivGreen />
       <section id="about" className="">
         <About />
       </section>
-      <WavyDivGreen />
-      <sectionc className="pt-80" id="contact">
-        <ContactForm />
-      </sectionc>
+      <WaviDivOndeado />
+      <section id="services">
+        <Services />
+      </section>
+
       <Footer />
       <WhatsappButton setShowContact={setShowContact} />
-      {showContact && <Contact setShowContact={setShowContact} />}
+      {showContact && <ContactForm setShowContact={setShowContact} />}
     </>
   );
 }

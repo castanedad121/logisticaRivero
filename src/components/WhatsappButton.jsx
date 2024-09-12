@@ -1,6 +1,6 @@
 import React from "react";
 
-const WhatsappButton = () => {
+const WhatsappButton = ({ setShowContact }) => {
   return (
     <>
       <a
@@ -27,6 +27,22 @@ const WhatsappButton = () => {
           />
         </svg>
       </a>
+      <button
+        onClick={() => setShowContact(true)}
+        className="fixed w-14 h-14 bottom-10 right-28  rounded-full flex items-center hover:bg-[#0B74CB] hover:scale-125"
+      >
+        <div className="drop-shadow-xl w-[50px] h-[50px] bg-[#2196F3] rounded-full border-white border-4 flex justify-center m-auto  hover:active:scale-75">
+          <svg
+            fill="#ffffff"
+            width="33"
+            height="33"
+            viewBox="0 0 24 24"
+            className="m-auto drop-shadow-xl"
+          >
+            <path d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z" />
+          </svg>
+        </div>
+      </button>
     </>
   );
 };
