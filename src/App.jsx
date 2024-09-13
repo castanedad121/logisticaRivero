@@ -9,6 +9,8 @@ import WavyDivGreen from "./components/WavyDivGreen";
 import WaviDivOndeado from "./components/WaviDivOndeado";
 import WhatsappButton from "./components/WhatsappButton";
 import MissionVisionSection from "./components/MissionVisionSection";
+import WavyDiv from "./components/WavyDiv";
+import Customer from "./components/Customer";
 import "./App.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -35,6 +37,10 @@ function App() {
       <WaviDivOndeado />
       <section id="services">
         <Services />
+      </section>
+      <WavyDiv />
+      <section id="customer">
+        <Customer />
       </section>
 
       <Footer />

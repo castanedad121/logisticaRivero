@@ -33,7 +33,7 @@ const About = () => {
               animate={inView ? { y: 0, opacity: 1 } : ""}
               transition={{ duration: 1 }}
             >
-              ¿Quiénes Somos?
+              ¿Quiénes <span className="text-green-600">Somos</span>?
             </motion.h2>
             <motion.p
               className="text-lg max-w-2xl mx-auto py-2 xl:py-4"
