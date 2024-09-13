@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 #root {
 
   margin: 0 auto;
@@ -41,4 +44,77 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: #2662E9;
+  font-size: 40px;
+}
+
+
+.slick-next:before {
+  position: absolute;
+  right: 0;
+  margin-top: -10px;
+  margin-right: 5px;
+}
+
+.slick-next,
+.slick-prev {
+  position: absolute;
+  right: 0;
+}
+
+.slick-prev {
+  z-index: 99999;
+  margin-left: 25px;
+}
+
+
+.slick-arrow {
+  position: absolute;
+  right: 50;
+  margin-right: 0px;
+}
+
+.slick-dots {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  position: relative;
+  top: 0px;
+  display: flex;
+  direction: flex-column;
+}
+
+.slick-dots li button:before {
+  color: #2662E9;
+
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2662E9;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-400px * 11 - 0.5rem * 22));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
 }

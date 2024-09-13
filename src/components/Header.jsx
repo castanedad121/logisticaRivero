@@ -55,6 +55,14 @@ const Header = () => {
           >
             Servicios
           </a>
+          <a
+            href="#customer"
+            className={`text-lg  ${
+              scrolled ? "text-black" : "text-white"
+            } hover:text-blue-500 transition duration-300`}
+          >
+            Nuestros clientes
+          </a>
         </nav>
       </div>
     </motion.header>

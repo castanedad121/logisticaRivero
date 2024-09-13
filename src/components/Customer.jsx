@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from "react";
 
 const Customer = () => {
-  const istitle = true;
+  const [visibility, setVisibility] = useState(true);
+
   const theme = "light";
-  const visibility = true;
-  const title = "";
 
   return (
     <>
-      <section className="bg-white pt-20 md:pt-24  pb-14">
-        {istitle || visibility ? (
+      <section className="bg-white  pt-20 md:pt-24  pb-14">
+        {visibility ? (
           <div className=" mx-auto w-full px-4">
-            <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-green-600 md:text-4xl animate-fade ">
-              Empresas que Confían en Nosotros
-            </h2>
+            <div className="flex flex-col  mb-8 justify-start w-full content-start text-center px-4">
+              <h2 className="text-3xl font-bold text-[#1B2680] drop-shadow-md">
+                Nuestros
+              </h2>
+              <h2 className="text-5xl font-bold text-green-600 drop-shadow-md">
+                Clientes
+              </h2>
+            </div>
             <div className="overflow-hidden w-full animate-flip-up">
               <div className="flex items-center whitespace-nowrap animate-scroll w-[88000px]">
                 <a href="#" className="h-full w-[400px] m-2 flex-shrink-0">

@@ -54,7 +54,7 @@ const Services = () => {
     service4: false,
   });
   return (
-    <section className="py-20 px-10 flex ">
+    <section className="lg:py-[150px] py-20 px-10 flex ">
       <div className="w-[25%] container mx-auto text-center">
         <div className="flex flex-col  mb-8 justify-start w-full content-start text-left px-4">
           <h2 className="text-3xl font-bold text-[#1B2680] drop-shadow-md">
@@ -76,6 +76,15 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0 * 0.2 }}
+            onClick={() =>
+              setServiceActive({
+                service0: true,
+                service1: false,
+                service2: false,
+                service3: false,
+                service4: false,
+              })
+            }
           >
             <div className="w-[10%] ">{services[0].logo}</div>
             <div className="w-[90%] flex justify-center content-center">
@@ -93,6 +102,15 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1 * 0.2 }}
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: true,
+                service2: false,
+                service3: false,
+                service4: false,
+              })
+            }
           >
             <div className="w-[10%] ">{services[1].logo}</div>
             <div className="w-[90%] flex justify-center content-center">
@@ -110,6 +128,15 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 2 * 0.2 }}
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: false,
+                service2: true,
+                service3: false,
+                service4: false,
+              })
+            }
           >
             <div className="w-[10%] ">{services[2].logo}</div>
             <div className="w-[90%] flex justify-center content-center">
@@ -127,6 +154,15 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 3 * 0.2 }}
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: false,
+                service2: false,
+                service3: true,
+                service4: false,
+              })
+            }
           >
             <div className="w-[10%] ">{services[3].logo}</div>
             <div className="w-[90%] flex justify-center content-center">
@@ -144,6 +180,15 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 4 * 0.2 }}
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: false,
+                service2: false,
+                service3: false,
+                service4: true,
+              })
+            }
           >
             <div className="w-[10%] ">{services[4].logo}</div>
             <div className="w-[90%] flex justify-center content-center">
@@ -153,78 +198,283 @@ const Services = () => {
         </div>
       </div>
       <div className="container mx-auto text-center w-2/3 flex  flex-col lg:flex-nowrap flex-wrap gap-2 mt-10 overflow-hidden rounded-xl shadow-xl bg-gray-100/5">
-        <div className="w-full flex ">
-          <div className="w-full bg-green-600 h-min rounded-br-[70px]">
-            <img
-              className="rounded-br-[100px]"
-              src={services[0].image}
-              alt=""
-            />
+        {serviceActive.service0 && (
+          <div className="w-full flex ">
+            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+              <img
+                className="rounded-br-[100px]"
+                src={services[0].image}
+                alt=""
+              />
+            </div>
+            <div className="w-full mx-4 my-2 text-start">
+              <h2 className="font-bold text-green-600 ">
+                ¿Necesitas transportar tu carga por mar?
+              </h2>
+              <p className="font-light">
+                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
+              </p>
+              <ul className="font-light">
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
+                  (Consolidada)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
+                  (Full Contenedores)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga
+                  Peligrosa - IMO
+                </li>
+              </ul>
+              <p>
+                Contamos con una amplia experiencia en el transporte marítimo y
+                podemos ofrecerte un servicio personalizado y de alta calidad.
+              </p>
+            </div>
           </div>
-          <div className="w-full mx-4 my-2 text-start">
-            <h2 className="font-bold text-green-600 ">
-              ¿Necesitas transportar tu carga por mar?
-            </h2>
-            <p className="font-light">
-              Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
-            </p>
-            <ul className="font-light">
-              <li>
-                <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
-                (Consolidada)
-              </li>
-              <li>
-                <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
-                (Full Contenedores)
-              </li>
-              <li>
-                <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
-              </li>
-              <li>
-                <span className="text-[#1B2680] text-xl">◦</span> Carga
-                Peligrosa - IMO
-              </li>
-            </ul>
-            <p>
-              Contamos con una amplia experiencia en el transporte marítimo y
-              podemos ofrecerte un servicio personalizado y de alta calidad.
-            </p>
+        )}
+        {serviceActive.service1 && (
+          <div className="w-full flex ">
+            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+              <img
+                className="rounded-br-[100px]"
+                src={services[1].image}
+                alt=""
+              />
+            </div>
+            <div className="w-full mx-4 my-2 text-start">
+              <h2 className="font-bold text-[#1B2680]">
+                ¿Necesitas enviar tu mercancía de forma rápida y económica? La
+                carga aérea consolidada es la mejor
+              </h2>
+              <p className="font-light">
+                La carga aérea consolidada es la mejor opción para envíos
+                urgentes.
+              </p>
+
+              <h2 className="text-[#1B2680] font-semibold ">
+                ◦ Carga Aérea Consolidada
+              </h2>
+              <p className="font-light ml-2">
+                Es una excelente alternativa para optimizar los costos en la
+                gestión logística.
+              </p>
+
+              <h2 className="text-[#1B2680] font-semibold">
+                ◦ Carga Aérea Back to Back
+              </h2>
+              <p className="font-light ml-2">
+                Garantizamos entregas rápidas y eficientes mediante vuelos
+                directos y conexiones, disponibles tanto diaria como
+                interdiariamente.
+              </p>
+            </div>
           </div>
-        </div>
+        )}
+        {serviceActive.service2 && (
+          <div className="w-full flex ">
+            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+              <img
+                className="rounded-br-[100px]"
+                src={services[0].image}
+                alt=""
+              />
+            </div>
+            <div className="w-full mx-4 my-2 text-start">
+              <h2 className="font-bold text-green-600 ">
+                ¿Necesitas transportar tu carga por mar?
+              </h2>
+              <p className="font-light">
+                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
+              </p>
+              <ul className="font-light">
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
+                  (Consolidada)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
+                  (Full Contenedores)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga
+                  Peligrosa - IMO
+                </li>
+              </ul>
+              <p>
+                Contamos con una amplia experiencia en el transporte marítimo y
+                podemos ofrecerte un servicio personalizado y de alta calidad.
+              </p>
+            </div>
+          </div>
+        )}
+        {serviceActive.service3 && (
+          <div className="w-full flex ">
+            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+              <img
+                className="rounded-br-[100px]"
+                src={services[0].image}
+                alt=""
+              />
+            </div>
+            <div className="w-full mx-4 my-2 text-start">
+              <h2 className="font-bold text-green-600 ">
+                ¿Necesitas transportar tu carga por mar?
+              </h2>
+              <p className="font-light">
+                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
+              </p>
+              <ul className="font-light">
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
+                  (Consolidada)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
+                  (Full Contenedores)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga
+                  Peligrosa - IMO
+                </li>
+              </ul>
+              <p>
+                Contamos con una amplia experiencia en el transporte marítimo y
+                podemos ofrecerte un servicio personalizado y de alta calidad.
+              </p>
+            </div>
+          </div>
+        )}
+        {serviceActive.service4 && (
+          <div className="w-full flex ">
+            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+              <img
+                className="rounded-br-[100px]"
+                src={services[0].image}
+                alt=""
+              />
+            </div>
+            <div className="w-full mx-4 my-2 text-start">
+              <h2 className="font-bold text-green-600 ">
+                ¿Necesitas transportar tu carga por mar?
+              </h2>
+              <p className="font-light">
+                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
+              </p>
+              <ul className="font-light">
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
+                  (Consolidada)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
+                  (Full Contenedores)
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
+                </li>
+                <li>
+                  <span className="text-[#1B2680] text-xl">◦</span> Carga
+                  Peligrosa - IMO
+                </li>
+              </ul>
+              <p>
+                Contamos con una amplia experiencia en el transporte marítimo y
+                podemos ofrecerte un servicio personalizado y de alta calidad.
+              </p>
+            </div>
+          </div>
+        )}
         <div className="w-full h-full flex gap-2 justify-center items-center ">
           <div
             className={
               serviceActive.service0
-                ? "size-1 bg-green-600/90 shadow-lg rounded-full  flex p-2 justify-between "
-                : "size-1 bg-[#1B2680]/90 shadow-lg rounded-full flex p-2 justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+                ? "size-4 bg-green-600/90 shadow-lg rounded-full  flex justify-between "
+                : "size-3 bg-[#1B2680]/90 shadow-lg rounded-full flex  justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+            }
+            onClick={() =>
+              setServiceActive({
+                service0: true,
+                service1: false,
+                service2: false,
+                service3: false,
+                service4: false,
+              })
             }
           ></div>
           <div
             className={
               serviceActive.service1
-                ? "size-1 bg-green-600/90 shadow-lg rounded-full  flex p-2 justify-between "
-                : "size-1 bg-[#1B2680]/90 shadow-lg rounded-full flex p-2 justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+                ? "size-4 bg-green-600/90 shadow-lg rounded-full  flex justify-between "
+                : "size-3 bg-[#1B2680]/90 shadow-lg rounded-full flex  justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+            }
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: true,
+                service2: false,
+                service3: false,
+                service4: false,
+              })
             }
           ></div>
           <div
             className={
               serviceActive.service2
-                ? "size-1 bg-green-600/90 shadow-lg rounded-full  flex p-2 justify-between "
-                : "size-1 bg-[#1B2680]/90 shadow-lg rounded-full flex p-2 justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+                ? "size-4 bg-green-600/90 shadow-lg rounded-full  flex justify-between "
+                : "size-3 bg-[#1B2680]/90 shadow-lg rounded-full flex  justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+            }
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: false,
+                service2: true,
+                service3: false,
+                service4: false,
+              })
             }
           ></div>
           <div
             className={
               serviceActive.service3
-                ? "size-1 bg-green-600/90 shadow-lg rounded-full  flex p-2 justify-between "
-                : "size-1 bg-[#1B2680]/90 shadow-lg rounded-full flex p-2 justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+                ? "size-4 bg-green-600/90 shadow-lg rounded-full  flex justify-between "
+                : "size-3 bg-[#1B2680]/90 shadow-lg rounded-full flex  justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+            }
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: false,
+                service2: false,
+                service3: true,
+                service4: false,
+              })
             }
           ></div>
           <div
             className={
               serviceActive.service4
-                ? "size-1 bg-green-600/90 shadow-lg rounded-full  flex p-2 justify-between "
-                : "size-1 bg-[#1B2680]/90 shadow-lg rounded-full flex p-2 justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+                ? "size-4 bg-green-600/90 shadow-lg rounded-full  flex justify-between "
+                : "size-3 bg-[#1B2680]/90 shadow-lg rounded-full flex  justify-between  hover:bg-green-600/90 hover:cursor-pointer"
+            }
+            onClick={() =>
+              setServiceActive({
+                service0: false,
+                service1: false,
+                service2: false,
+                service3: false,
+                service4: true,
+              })
             }
           ></div>
         </div>
