@@ -53,7 +53,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="text-wrap text-4xl md:text-6xl font-bold"
         >
-          Lideramos tu Cadena de Suministro con Excelencia
+          Somos tu mejor aliado
         </motion.h1>
         <motion.p
           initial={{ y: 50, opacity: 0 }}
