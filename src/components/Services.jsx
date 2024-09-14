@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { RiShipLine } from "react-icons/ri";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { LiaShippingFastSolid } from "react-icons/lia";
@@ -40,10 +40,17 @@ const services = [
     description:
       "Análisis de costos, optimización de márgenes y precios competitivos",
     image:
-      "https://www.ulima.edu.pe/sites/default/files/ublog/img/transporte-maritimo_600x300.jpg",
+      "https://ilen.edu.pe/wp-content/uploads/2021/11/Responsable-de-logistica-1200x600-1.jpg",
     logo: <GrBarChart className="size-8 m-auto" />,
   },
 ];
+
+// Variantes de animación para cada servicio
+const serviceVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: 100 },
+};
 
 const Services = () => {
   const [serviceActive, setServiceActive] = useState({
@@ -198,205 +205,238 @@ const Services = () => {
         </div>
       </div>
       <div className="container mx-auto text-center w-2/3 flex  flex-col lg:flex-nowrap flex-wrap gap-2 mt-10 overflow-hidden rounded-xl shadow-xl bg-gray-100/5">
-        {serviceActive.service0 && (
-          <div className="w-full flex ">
-            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
-              <img
-                className="rounded-br-[100px]"
-                src={services[0].image}
-                alt=""
-              />
-            </div>
-            <div className="w-full mx-4 my-2 text-start">
-              <h2 className="font-bold text-green-600 ">
-                ¿Necesitas transportar tu carga por mar?
-              </h2>
-              <p className="font-light">
-                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
-              </p>
-              <ul className="font-light">
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
-                  (Consolidada)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
-                  (Full Contenedores)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga
-                  Peligrosa - IMO
-                </li>
-              </ul>
-              <p>
-                Contamos con una amplia experiencia en el transporte marítimo y
-                podemos ofrecerte un servicio personalizado y de alta calidad.
-              </p>
-            </div>
-          </div>
-        )}
-        {serviceActive.service1 && (
-          <div className="w-full flex ">
-            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
-              <img
-                className="rounded-br-[100px]"
-                src={services[1].image}
-                alt=""
-              />
-            </div>
-            <div className="w-full mx-4 my-2 text-start">
-              <h2 className="font-bold text-[#1B2680]">
-                ¿Necesitas enviar tu mercancía de forma rápida y económica? La
-                carga aérea consolidada es la mejor
-              </h2>
-              <p className="font-light">
-                La carga aérea consolidada es la mejor opción para envíos
-                urgentes.
-              </p>
+        <AnimatePresence mode="wait">
+          {serviceActive.service0 && (
+            <motion.div
+              key={0}
+              className="w-full flex"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={serviceVariants}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+                <img
+                  className="rounded-br-[100px]"
+                  src={services[0].image}
+                  alt=""
+                />
+              </div>
+              <div className="w-full mx-4 my-2 text-start">
+                <h2 className="font-bold text-green-600 ">
+                  ¿Necesitas transportar tu carga por mar?
+                </h2>
+                <p className="font-light">
+                  Ofrecemos fletes marítimos para todo tipo de carga,
+                  incluyendo:
+                </p>
+                <ul className="">
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
+                    (Consolidada)
+                  </li>
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
+                    (Full Contenedores)
+                  </li>
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Carga
+                    REEFER
+                  </li>
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Carga
+                    Peligrosa - IMO
+                  </li>
+                </ul>
+                <p className="font-light">
+                  Contamos con una amplia experiencia en el transporte marítimo
+                  y podemos ofrecerte un servicio personalizado y de alta
+                  calidad.
+                </p>
+              </div>
+            </motion.div>
+          )}
+          {serviceActive.service1 && (
+            <motion.div
+              key={1}
+              className="w-full flex"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={serviceVariants}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+                <img
+                  className="rounded-br-[100px]"
+                  src={services[1].image}
+                  alt=""
+                />
+              </div>
+              <div className="w-full mx-4 my-2 text-start">
+                <h2 className="font-bold text-[#1B2680]">
+                  ¿Necesitas enviar tu mercancía de forma rápida y económica? La
+                  carga aérea consolidada es la mejor
+                </h2>
+                <p className="font-light">
+                  La carga aérea consolidada es la mejor opción para envíos
+                  urgentes.
+                </p>
 
-              <h2 className="text-[#1B2680] font-semibold ">
-                ◦ Carga Aérea Consolidada
-              </h2>
-              <p className="font-light ml-2">
-                Es una excelente alternativa para optimizar los costos en la
-                gestión logística.
-              </p>
+                <h2 className="text-[#1B2680] font-semibold ">
+                  ◦ Carga Aérea Consolidada
+                </h2>
+                <p className="font-light ml-2">
+                  Es una excelente alternativa para optimizar los costos en la
+                  gestión logística.
+                </p>
 
-              <h2 className="text-[#1B2680] font-semibold">
-                ◦ Carga Aérea Back to Back
-              </h2>
-              <p className="font-light ml-2">
-                Garantizamos entregas rápidas y eficientes mediante vuelos
-                directos y conexiones, disponibles tanto diaria como
-                interdiariamente.
-              </p>
-            </div>
-          </div>
-        )}
-        {serviceActive.service2 && (
-          <div className="w-full flex ">
-            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
-              <img
-                className="rounded-br-[100px]"
-                src={services[0].image}
-                alt=""
-              />
-            </div>
-            <div className="w-full mx-4 my-2 text-start">
-              <h2 className="font-bold text-green-600 ">
-                ¿Necesitas transportar tu carga por mar?
-              </h2>
-              <p className="font-light">
-                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
-              </p>
-              <ul className="font-light">
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
-                  (Consolidada)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
-                  (Full Contenedores)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga
-                  Peligrosa - IMO
-                </li>
-              </ul>
-              <p>
-                Contamos con una amplia experiencia en el transporte marítimo y
-                podemos ofrecerte un servicio personalizado y de alta calidad.
-              </p>
-            </div>
-          </div>
-        )}
-        {serviceActive.service3 && (
-          <div className="w-full flex ">
-            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
-              <img
-                className="rounded-br-[100px]"
-                src={services[0].image}
-                alt=""
-              />
-            </div>
-            <div className="w-full mx-4 my-2 text-start">
-              <h2 className="font-bold text-green-600 ">
-                ¿Necesitas transportar tu carga por mar?
-              </h2>
-              <p className="font-light">
-                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
-              </p>
-              <ul className="font-light">
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
-                  (Consolidada)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
-                  (Full Contenedores)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga
-                  Peligrosa - IMO
-                </li>
-              </ul>
-              <p>
-                Contamos con una amplia experiencia en el transporte marítimo y
-                podemos ofrecerte un servicio personalizado y de alta calidad.
-              </p>
-            </div>
-          </div>
-        )}
-        {serviceActive.service4 && (
-          <div className="w-full flex ">
-            <div className="w-full bg-green-600 h-min rounded-br-[70px]">
-              <img
-                className="rounded-br-[100px]"
-                src={services[0].image}
-                alt=""
-              />
-            </div>
-            <div className="w-full mx-4 my-2 text-start">
-              <h2 className="font-bold text-green-600 ">
-                ¿Necesitas transportar tu carga por mar?
-              </h2>
-              <p className="font-light">
-                Ofrecemos fletes marítimos para todo tipo de carga, incluyendo:
-              </p>
-              <ul className="font-light">
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga LCL
-                  (Consolidada)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga FCL
-                  (Full Contenedores)
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga REEFER
-                </li>
-                <li>
-                  <span className="text-[#1B2680] text-xl">◦</span> Carga
-                  Peligrosa - IMO
-                </li>
-              </ul>
-              <p>
-                Contamos con una amplia experiencia en el transporte marítimo y
-                podemos ofrecerte un servicio personalizado y de alta calidad.
-              </p>
-            </div>
-          </div>
-        )}
-        <div className="w-full h-full flex gap-2 justify-center items-center ">
+                <h2 className="text-[#1B2680] font-semibold">
+                  ◦ Carga Aérea Back to Back
+                </h2>
+                <p className="font-light ml-2">
+                  Garantizamos entregas rápidas y eficientes mediante vuelos
+                  directos y conexiones, disponibles tanto diaria como
+                  interdiariamente.
+                </p>
+              </div>
+            </motion.div>
+          )}
+          {serviceActive.service2 && (
+            <motion.div
+              key={2}
+              className="w-full flex"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={serviceVariants}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+                <img
+                  className="rounded-br-[100px]"
+                  src={services[2].image}
+                  alt=""
+                />
+              </div>
+              <div className="w-full mx-4 my-2 text-start">
+                <h2 className="font-bold text-green-600 ">
+                  ¿Tiene alguna necesidad de transporte de carga terrestre
+                  nacional o internacional en este momento?
+                </h2>
+                <p className="font-light">
+                  Ofrecemos una amplia gama de servicios de transporte de carga
+                  terrestre nacional e internacional, incluyendo:
+                </p>
+                <ul className="">
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Transporte
+                    de contenedores (1x20st, 1x40HQ).
+                  </li>
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Transporte
+                    para cargas sueltas.
+                  </li>
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Transporte
+                    en camión furgón.
+                  </li>
+                  <li>
+                    <span className="text-[#1B2680] text-xl">◦</span> Transporte
+                    internacional a fronteras.
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+          )}
+          {serviceActive.service3 && (
+            <motion.div
+              key={3}
+              className="w-full flex"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={serviceVariants}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+                <img
+                  className="rounded-br-[100px]"
+                  src={services[3].image}
+                  alt=""
+                />
+              </div>
+              <div className="w-full mx-4 my-2 text-start">
+                <h2 className="font-bold text-[#1B2680] ">
+                  ¿Está cansado de perder tiempo y dinero en los trámites
+                  aduaneros?
+                </h2>
+                <p className="font-light my-5 mx-2">
+                  ¡Confíe para que su mercancía llegue a su destino de forma
+                  rápida, segura y sin complicaciones!
+                </p>
+
+                <p className="mx-2">
+                  El servicio de aduanas comprende desde la llegada de la
+                  mercancía al Perú hasta la posterior entrega en sus
+                  instalaciones.
+                </p>
+              </div>
+            </motion.div>
+          )}
+          {serviceActive.service4 && (
+            <motion.div
+              key={4}
+              className="w-full flex"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={serviceVariants}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-full bg-green-600 h-min rounded-br-[70px]">
+                <img
+                  className="rounded-br-[100px]"
+                  src={services[4].image}
+                  alt=""
+                />
+              </div>
+              <div className="w-full mx-4 my-2 text-start">
+                <h2 className="font-bold text-green-600 ">
+                  Nuestra consultoría integral te ayuda a:
+                </h2>
+                <p className="font-light">
+                  Ofrecemos fletes marítimos para todo tipo de carga,
+                  incluyendo:
+                </p>
+                <ul className="font-light mx-2 list-disc leading-5">
+                  <li className="mx-3">
+                    <span className="font-semibold">
+                      Establecer márgenes de utilidad óptimos
+                    </span>{" "}
+                    que maximicen tus ganancias.
+                  </li>
+                  <li className="mx-3">
+                    <span className="font-semibold">
+                      Determinar con precisión los costos de logística integral,
+                    </span>{" "}
+                    incluyendo transporte, almacenamiento, inventario y gestión
+                    de pedidos.
+                  </li>
+                  <li className="mx-3">
+                    <span className="font-semibold">
+                      Establecer precios de productos competitivos
+                    </span>{" "}
+                    que se ajusten a las condiciones del mercado y te permitan
+                    aumentar tus ventas.
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <div className="w-full h-full flex gap-2 justify-center items-center mt-4">
           <div
             className={
               serviceActive.service0

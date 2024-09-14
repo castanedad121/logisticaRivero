@@ -17,16 +17,12 @@ const Header = () => {
   return (
     <motion.header
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500 ${
-        scrolled ? "bg-white/95 shadow" : "bg-black/35  shadow"
+        scrolled ? "bg-white/95 shadow" : "bg-white/95 shadow"
       }`}
     >
       <div className="container mx-auto p-2 flex justify-around items-center">
         <a href="/">
-          <img
-            src={scrolled ? logo : logoClaro}
-            alt="Logística Rivero"
-            className="h-10"
-          />
+          <img src={logo} alt="Logística Rivero" className="h-10" />
         </a>
 
         {/* Menú de Navegación */}
@@ -34,7 +30,7 @@ const Header = () => {
           <a
             href="#missionVision"
             className={`text-lg  ${
-              scrolled ? "text-black" : "text-white"
+              scrolled ? "text-black" : "text-black"
             } hover:text-blue-500 transition duration-300`}
           >
             Nuetros Pilares
@@ -42,7 +38,7 @@ const Header = () => {
           <a
             href="#about"
             className={`text-lg  ${
-              scrolled ? "text-black" : "text-white"
+              scrolled ? "text-black" : "text-black"
             } hover:text-blue-500 transition duration-300`}
           >
             ¿Quiénes Somos?
@@ -50,7 +46,7 @@ const Header = () => {
           <a
             href="#services"
             className={`text-lg  ${
-              scrolled ? "text-black" : "text-white"
+              scrolled ? "text-black" : "text-black"
             } hover:text-blue-500 transition duration-300`}
           >
             Servicios
@@ -58,7 +54,7 @@ const Header = () => {
           <a
             href="#customer"
             className={`text-lg  ${
-              scrolled ? "text-black" : "text-white"
+              scrolled ? "text-black" : "text-black"
             } hover:text-blue-500 transition duration-300`}
           >
             Nuestros clientes
