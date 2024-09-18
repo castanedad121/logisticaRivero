@@ -2,8 +2,8 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 #root {
-
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   text-align: center;
 }
 
@@ -104,12 +104,12 @@
   }
 
   100% {
-    transform: translateX(calc(-400px * 11 - 0.5rem * 22));
+    transform: translateX(-4400px);
   }
 }
 
 .animate-scroll {
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 

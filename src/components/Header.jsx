@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import logo from "../assets/logoRivero.png";
-import logoClaro from "../assets/logo-claro.png";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [viewMenuMobile, setViewMenuMobile] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,13 +22,13 @@ const Header = () => {
         scrolled ? "bg-white/95 shadow" : "bg-white/95 shadow"
       }`}
     >
-      <div className="container mx-auto p-2 flex justify-around items-center">
-        <a href="/">
-          <img src={logo} alt="Logística Rivero" className="h-10" />
+      <div className="w-full relative  bg-white/95 shadow  p-2 flex justify-between items-center ">
+        <a className="m-auto" href="/">
+          <img src={logo} alt="Logística Rivero" className="h-8 md:h-10 " />
         </a>
 
         {/* Menú de Navegación */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:w-[50%] md:flex  space-x-8">
           <a
             href="#missionVision"
             className={`text-lg  ${
@@ -60,7 +62,51 @@ const Header = () => {
             Nuestros clientes
           </a>
         </nav>
+
+        {viewMenuMobile ? (
+          <IoClose
+            className="size-8  absolute top-3 right-3 md:hidden hover:text-red-500"
+            onClick={() => setViewMenuMobile(false)}
+          />
+        ) : (
+          <IoMenu
+            className="size-8  absolute top-3 right-3 md:hidden hover:text-green-500"
+            onClick={() => setViewMenuMobile(true)}
+          />
+        )}
       </div>
+      {viewMenuMobile && (
+        <nav className="flex flex-col  w-full text-center ">
+          <a
+            href="#missionVision"
+            className=" text-black  hover:bg-blue-500  hover:text-white transition duration-300"
+            onClick={() => setViewMenuMobile(false)}
+          >
+            Nuetros Pilares
+          </a>
+          <a
+            href="#about"
+            className="text-black  hover:bg-blue-500  hover:text-white transition duration-300"
+            onClick={() => setViewMenuMobile(false)}
+          >
+            ¿Quiénes Somos?
+          </a>
+          <a
+            href="#services"
+            className=" text-black  hover:bg-blue-500  hover:text-white transition duration-300"
+            onClick={() => setViewMenuMobile(false)}
+          >
+            Servicios
+          </a>
+          <a
+            href="#customer"
+            className="  text-black  hover:bg-blue-500  hover:text-white transition duration-300"
+            onClick={() => setViewMenuMobile(false)}
+          >
+            Nuestros clientes
+          </a>
+        </nav>
+      )}
     </motion.header>
   );
 };

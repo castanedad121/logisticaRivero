@@ -36,18 +36,19 @@ const ContactForm = ({ setShowContact }) => {
 
             <form className="bg-white shadow-lg p-8 rounded-lg">
               <div className="flex justify-around items-center gap-1 md:gap-2 flex-col pb-4 ">
-                <span className="flex gap-1 ">
-                  <CiLocationOn className="size-6 text-[#1B2680]" /> Av. San
-                  Borja Norte 459, Dpto. 603 – San Borja
+                <span className="flex gap-0 md:gap-1 md:text-base text-sm ">
+                  <CiLocationOn className="size-6 md:size-6 text-[#1B2680]" />{" "}
+                  Av. San Borja Norte 459, Dpto. 603 – San Borja
                 </span>
                 <span className="flex gap-1 ">
-                  <CiPhone className="size-6 text-[#1B2680]" /> 926 932 008
+                  <CiPhone className="size-4 md:size-6 text-[#1B2680]" /> 926
+                  932 008
                 </span>
                 <span
                   className="flex gap-1  hover:cursor-pointer hover:text-green-600"
                   onClick={handleCopyEmail}
                 >
-                  <CiMail className="size-6 text-[#1B2680]" />{" "}
+                  <CiMail className="size-4 md:size-6 text-[#1B2680]" />{" "}
                   johanna@logisticarivero.com
                 </span>
                 {/* Mensaje de confirmación */}

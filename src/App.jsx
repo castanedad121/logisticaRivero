@@ -11,6 +11,7 @@ import WhatsappButton from "./components/WhatsappButton";
 import MissionVisionSection from "./components/MissionVisionSection";
 import WavyDiv from "./components/WavyDiv";
 import Customer from "./components/Customer";
+import Prueba from "./components/Prueba";
 import "./App.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -26,19 +27,24 @@ function App() {
   return (
     <>
       <Header />
+
       <Hero />
-      <section id="missionVision" className="">
+
+      <section id="missionVision" className="w-full bg-slate-500">
         <MissionVisionSection />
       </section>
       <WavyDivGreen />
+
       <section id="about" className="">
         <About />
       </section>
       <WaviDivOndeado />
+
       <section id="services">
         <Services />
       </section>
       <WavyDiv />
+
       <section id="customer">
         <Customer />
       </section>

@@ -8,7 +8,7 @@ const CTAButton = ({ text }) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <button className="bg-blue-500 text-white px-6 py-3 rounded-lg transform transition duration-500 hover:scale-105 hover:bg-[#1B2680]">
+      <button className="bg-blue-500 text-white p-2 mb-4 md:px-6 md:py-3 md:text-sm rounded-lg transform transition duration-500 hover:scale-105 hover:bg-[#1B2680]">
         {text}
       </button>
     </a>

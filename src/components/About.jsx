@@ -23,12 +23,12 @@ const About = () => {
   };
 
   return (
-    <section ref={ref} className="pt-24 pb-[150px]">
-      <div className="container mx-auto text-center animate-fadeIn pt-10 flex">
+    <section ref={ref} className="pt-8 md:pt-24 md:pb-[150px]">
+      <div className="container mx-auto text-center animate-fadeIn md:pt-10 flex">
         <div className="flex w-full flex-col lg:flex-row items-center lg:items-start">
-          <div className="xl:w-1/2 p-4 flex flex-col justify-center">
+          <div className="md:w-1/2 p-4 flex flex-col justify-center">
             <motion.h2
-              className="text-4xl font-bold xl:mb-16 animate-slideIn text-[#1B2680]"
+              className="text-3xl px-6 md:text-4xl font-bold xl:mb-16 animate-slideIn text-[#1B2680]"
               initial={{ y: -50, opacity: 0 }}
               animate={inView ? { y: 0, opacity: 1 } : ""}
               transition={{ duration: 1 }}
@@ -36,7 +36,7 @@ const About = () => {
               ¿Quiénes <span className="text-green-600">Somos</span>?
             </motion.h2>
             <motion.p
-              className="text-lg max-w-2xl mx-auto py-2 xl:py-4"
+              className="md:text-lg max-w-2xl mx-auto py-2 xl:py-4"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : ""}
               transition={{ duration: 1, delay: 0.3 }}
@@ -47,7 +47,7 @@ const About = () => {
               internacional.
             </motion.p>
             <motion.p
-              className="text-lg font-medium max-w-2xl py-6 xl:py-12 xl:px-20 mx-auto text-[#009450]"
+              className="md:text-lg font-medium max-w-2xl md:py-6 xl:py-12 xl:px-20 mx-auto text-[#009450]"
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : ""}
               transition={{ duration: 1, delay: 0.6 }}
@@ -57,7 +57,7 @@ const About = () => {
             </motion.p>
           </div>
 
-          <div className="relative xl:w-1/2 p-4 h-full flex flex-grow justify-around">
+          <div className="relative hidden md:w-1/2 p-4 h-full md:flex flex-grow justify-around">
             {/* Div de colores con animaciones */}
             <motion.div
               className="w-1/2 flex gap-10"
@@ -84,7 +84,7 @@ const About = () => {
 
             {/* Imágenes con zoom suave en hover */}
             <motion.div
-              className="w-full lg:w-[50%] h-auto rounded-lg shadow-lg absolute left-4 top-4 overflow-hidden"
+              className="w-[50%] lg:w-[50%] h-auto rounded-lg shadow-lg absolute left-4 top-4 overflow-hidden"
               variants={imageVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
@@ -98,7 +98,37 @@ const About = () => {
             </motion.div>
 
             <motion.div
-              className="w-full lg:w-[50%] h-auto rounded-lg shadow-lg absolute right-4 bottom-4 overflow-hidden"
+              className="w-[50%] md:w-[50%] h-auto rounded-lg shadow-lg absolute right-4 bottom-4 overflow-hidden"
+              variants={imageVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <img
+                src={imageAbout2}
+                alt="Equipo de Logística"
+                className="w-full transition-transform duration-700 ease-in-out transform hover:scale-110 shadow-lg"
+              />
+            </motion.div>
+          </div>
+          <div className="md:hidden  relative h-64 w-full  p-4  flex flex-grow justify-around">
+            {/* Div de colores con animaciones */}
+            <motion.div
+              className="w-full flex gap-6 justify-around px-4"
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              variants={colorDivVariants}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="w-4 h-full bg-[#1B2680] rounded-md"></div>
+              <div className="w-4 h-full bg-green-600 rounded-md"></div>
+              <div className="w-4 h-full bg-[#1B2680] rounded-md"></div>
+              <div className="w-4 h-full bg-green-600 rounded-md"></div>
+              <div className="w-4 h-full bg-[#1B2680] rounded-md"></div>
+              <div className="w-4 h-full bg-green-600 rounded-md"></div>
+            </motion.div>
+            <motion.div
+              className="md:hidden w-full h-[70%]  block rounded-lg shadow-lg top-10 absolute overflow-hidden"
               variants={imageVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}

@@ -18,14 +18,14 @@ const Footer = () => {
     });
   };
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto text-center">
+    <footer className="bg-gray-800 text-white py-6 w-full overflow-hidden">
+      <div className=" mx-auto text-center">
         <img src={logo} alt="" className="h-12 mx-auto mb-6" />
         <p>
           &copy; {new Date().getFullYear()} Logística Rivero. Todos los derechos
           reservados.
         </p>
-        <div className="flex justify-center items-center mt-4 text-sm text-nowrap  gap-12">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-4 text-sm text-nowrap gap-4  md:gap-12">
           <div className="flex justify-around items-center gap-1 md:gap-4 flex-col  md:flex-row">
             <a
               target="_blank"
