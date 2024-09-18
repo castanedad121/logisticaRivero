@@ -30,7 +30,7 @@ const Customer = () => {
     <>
       <section className="bg-white pt-14  md:pt-20  md:pb-4 " ref={sectionRef}>
         <div className=" mx-auto w-full ">
-          <div className="flex flex-col  mb-8 justify-start w-full content-start text-center ">
+          <div className="flex flex-col  md:mb-8 justify-start w-full content-start text-center ">
             <h2 className="text-3xl font-bold text-[#1B2680] drop-shadow-md">
               Nuestros
             </h2>
@@ -42,10 +42,14 @@ const Customer = () => {
             className={`overflow-hidden ${isVisible ? "animate-flip-up" : ""}`}
             // className="overflow-hidden  animate-flip-up "
           >
-            <div className="flex items-center whitespace-nowrap animate-scroll w-[8800px]">
+            <div
+              className={`flex items-center whitespace-nowrap ${
+                isVisible ? "animate-scroll" : ""
+              }  w-[8800px]`}
+            >
               <a
                 href="!#"
-                className="h-[300px] w-[400px] flex justify-center items-center content-center  "
+                className="h-[300px] w-[400px] flex justify-center items-center content-center"
               >
                 <img
                   src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/01-MEDIIMAGEN-min_oenytz.png"

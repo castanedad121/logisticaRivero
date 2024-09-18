@@ -21,12 +21,12 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-6 w-full overflow-hidden">
       <div className=" mx-auto text-center">
         <img src={logo} alt="" className="h-12 mx-auto mb-6" />
-        <p>
+        <p className="text-sm md:text-base">
           &copy; {new Date().getFullYear()} Logística Rivero. Todos los derechos
           reservados.
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center mt-4 text-sm text-nowrap gap-4  md:gap-12">
-          <div className="flex justify-around items-center gap-1 md:gap-4 flex-col  md:flex-row">
+          <div className="flex justify-around items-center gap-1 md:gap-4 flex-col  md:flex-row text-sm md:text-base">
             <a
               target="_blank"
               href="https://www.google.com/maps/place/Av.+San+Borja+Nte.+459,+Lima+15036/@-12.093691,-77.005031,18z/data=!4m6!3m5!1s0x9105c7d73681d3fb:0x630c39bc9c503e05!8m2!3d-12.0938326!4d-77.0050205!16s%2Fg%2F11cs8035bz?hl=es-419&entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
@@ -63,11 +63,19 @@ const Footer = () => {
               https://logisticarivero.com/
             </a>
           </div>
-          <div className="flex justify-around items-center gap-2 ">
-            <a href="">
+          <div className="flex w-full md:w-auto pl-10 md:pl-0 justify-start md:items-center gap-4 md:gap-2 pt-4 ">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/log-stica-rivero-logriv/"
+            >
               <CiLinkedin className="size-6 hover:bg-[#0e76a8] rounded-md" />
             </a>
-            <a href="">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/logrivsac?utm_source=qr&igsh=MTE3cDM4amh6bWlkeg=="
+            >
               <CiInstagram className="size-6 rounded-md hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]" />
             </a>
             <a

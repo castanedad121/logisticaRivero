@@ -43,7 +43,7 @@ const MissionVisionSection = () => {
     <>
       <WavyDiv />
 
-      <section className="bg-white md:py-10 px-4 md:px-20 lg:py-40" ref={ref}>
+      <section className="bg-white  px-4 md:px-20  md:py-[190px]" ref={ref}>
         <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between relative">
           {/* Imagen de la izquierda */}
           <motion.div

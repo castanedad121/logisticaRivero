@@ -4,7 +4,7 @@ const WhatsappButton = ({ setShowContact }) => {
   return (
     <>
       <a
-        className="drop-shadow-xl fixed w-14 h-14 bottom-10 right-10  rounded-full flex items-center hover:bg-[#1ab152] hover:scale-125"
+        className="drop-shadow-xl fixed w-14 h-14 bottom-1 right-1 md:bottom-10 md:right-10  rounded-full flex items-center hover:bg-[#1ab152] hover:scale-125"
         href="https://wa.me/51926932008?text=Hola%20vengo%20de%20tu%20pagina%20web%20y%20necesito%20que%20me%20brindes%20información"
         target="_blank"
         rel="noopener noreferrer"
@@ -29,7 +29,7 @@ const WhatsappButton = ({ setShowContact }) => {
       </a>
       <button
         onClick={() => setShowContact(true)}
-        className="fixed w-14 h-14 bottom-10 right-28  rounded-full flex items-center hover:bg-[#0B74CB] hover:scale-125"
+        className="fixed w-14 h-14 bottom-1 right-16  md:bottom-10 md:right-28  rounded-full flex items-center hover:bg-[#0B74CB] hover:scale-125"
       >
         <div className="drop-shadow-xl w-[50px] h-[50px] bg-[#2196F3] rounded-full border-white border-4 flex justify-center m-auto  hover:active:scale-75">
           <svg
