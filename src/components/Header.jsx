@@ -51,7 +51,7 @@ const Header = () => {
               scrolled ? "text-black" : "text-black"
             } hover:text-blue-500 transition duration-300`}
           >
-            Servicios
+            Nuestros Servicios
           </a>
           <a
             href="#customer"
@@ -96,7 +96,7 @@ const Header = () => {
             className=" text-black  hover:bg-blue-500  hover:text-white transition duration-300"
             onClick={() => setViewMenuMobile(false)}
           >
-            Servicios
+            Nuestros Servicios
           </a>
           <a
             href="#customer"
