@@ -105,7 +105,7 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="text-wrap text-3xl px-10 md:text-6xl font-bold drop-shadow-sm mt-8 md:mt-0"
           >
-            Seguimiento de tus envios las 24 horas
+            Seguimiento de tus envíos las 24 horas
           </motion.h1>
           <motion.p
             initial={{ y: 50, opacity: 0 }}
