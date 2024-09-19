@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import imageAbout from "../assets/about1.jpg";
-import imageAbout2 from "../assets/about2.jpg";
+import imageAbout from "../assets/img1_A.png";
+import imageAbout2 from "../assets/img2_A.png";
 
 const About = () => {
   const [ref, inView] = useInView({

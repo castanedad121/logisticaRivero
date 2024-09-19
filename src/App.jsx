@@ -11,7 +11,7 @@ import WhatsappButton from "./components/WhatsappButton";
 import MissionVisionSection from "./components/MissionVisionSection";
 import WavyDiv from "./components/WavyDiv";
 import Customer from "./components/Customer";
-import Prueba from "./components/Prueba";
+
 import "./App.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
