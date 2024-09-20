@@ -55,7 +55,11 @@ const ContactForm = ({ setShowContact }) => {
               />
             </div>
 
-            <form className="bg-white shadow-lg p-8 rounded-lg">
+            <form
+              className="bg-white shadow-lg p-8 rounded-lg"
+              action="https://formsubmit.co/johanna@logisticarivero.com"
+              method="POST"
+            >
               <input type="hidden" name="_captcha" value="false"></input>
               <input type="hidden" name="_template" value="box"></input>
               <input
@@ -108,11 +112,13 @@ const ContactForm = ({ setShowContact }) => {
                 rows="5"
               ></textarea>
 
-              <input type="hidden" name="_next" value="/"></input>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://logisticarivero.com/"
+              ></input>
 
               <button
-                action="https://formsubmit.co/johanna@logisticarivero.com"
-                method="POST"
                 type="submit"
                 className="w-full bg-green-600 text-white py-3 rounded hover:bg-green-700 transition-colors"
                 onClick={handleClick}
