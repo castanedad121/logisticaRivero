@@ -11,37 +11,38 @@ const services = [
     title: "Carga Marítima Internacional",
     description: "LCL, FCL, REEFER, Peligrosa - IMO",
     image:
-      "https://www.ulima.edu.pe/sites/default/files/ublog/img/transporte-maritimo_600x300.jpg",
-    logo: <RiShipLine className="size-8 m-auto " />,
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667833/Servicios_de_Log%C3%ADstica_Mar%C3%ADtima_Eficientes_y_C_bkxgn3.webp",
+    logo: <RiShipLine className="size-8 text-white" />,
   },
   {
     title: "Carga Aérea Internacional",
     description: "Carga Aérea Consolidada, Back to Back",
     image:
-      "https://www.southexpress.pe/wp-content/uploads/2023/10/transporte-de-carga-aerea-internacional-South-Express.png",
-    logo: <GiAirplaneDeparture className="size-8 m-auto " />,
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667730/transporte-de-carga-aerea-internacional-South-Express_xrsemp.png",
+    logo: <GiAirplaneDeparture className="size-8 text-white" />,
   },
   {
     title: "Carga Terrestre Nacional e Internacional",
     description:
       "Contenedores, cargas sueltas, camión furgón, transporte internacional",
     image:
-      "https://www.southexpress.pe/wp-content/uploads/2022/10/TERRESTRE-1.jpg",
-    logo: <LiaShippingFastSolid className="size-8 m-auto" />,
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667774/TERRESTRE-1_zlqdw2.jpg",
+    logo: <LiaShippingFastSolid className="size-8 text-white" />,
   },
   {
     title: "Agenciamiento de Aduanas",
     description: "Trámites aduaneros rápidos y seguros",
-    image: imageService4,
-    logo: <LuFiles className="size-8 m-auto" />,
+    image:
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667870/agenciamientoaduana_aoeuyh.png",
+    logo: <LuFiles className="size-8 text-white" />,
   },
   {
     title: "Consultoría Logística Integral",
     description:
       "Análisis de costos, optimización de márgenes y precios competitivos",
     image:
-      "https://ilen.edu.pe/wp-content/uploads/2021/11/Responsable-de-logistica-1200x600-1.jpg",
-    logo: <GrBarChart className="size-8 m-auto" />,
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741668181/rs_w_600_h_300_cg_true_p9nhtc.webp",
+    logo: <GrBarChart className="size-8 text-white" />,
   },
 ];
 

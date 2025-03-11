@@ -52,7 +52,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center"
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/01-MEDIIMAGEN-min_oenytz.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667075/01-MEDIIMAGEN-min_oenytz_pwa2dp.png"
                   alt=""
                   className="h-28  opacity-50  hover:opacity-100"
                 />
@@ -62,7 +62,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613810/02-JATSUMI-min_y0qf1h.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667103/02-JATSUMI-min_y0qf1h_spwzhk.png"
                   alt=""
                   className="m-auto h-60 opacity-50  hover:opacity-100"
                 />
@@ -73,7 +73,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613810/03-santofa-min_yof9pd.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667143/03-santofa-min_yof9pd_oskyxt.png"
                   alt=""
                   className="m-auto h-24 opacity-50  hover:opacity-100"
                 />
@@ -84,7 +84,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/04-OPTIDENT-min_sy4jqd.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667179/04-OPTIDENT-min_sy4jqd_dbgeus.png"
                   alt=""
                   className="m-auto h-40 opacity-50  hover:opacity-100"
                 />
@@ -95,7 +95,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/05-servomotion-min_jrdbum.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667208/05-servomotion-min_jrdbum_cmqgxq.png"
                   alt=""
                   className="m-auto h-20 opacity-50  hover:opacity-100"
                 />
@@ -106,7 +106,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/06-frankolmotors-min_fgpkpf.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667241/06-frankolmotors-min_fgpkpf_w8bxf6.png"
                   alt=""
                   className="m-auto h-32 opacity-50  hover:opacity-100"
                 />
@@ -116,7 +116,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/07-IDENTIGRAF-min_dblach.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667282/07-IDENTIGRAF-min_dblach_ptjvaf.png"
                   alt=""
                   className=" m-auto  h-20  opacity-50  hover:opacity-100"
                 />
@@ -127,7 +127,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613812/08-VERSUGAS-min_lclzkh.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667315/08-VERSUGAS-min_lclzkh_llxh9d.png"
                   alt=""
                   className="m-auto h-44 opacity-50  hover:opacity-100"
                 />
@@ -138,7 +138,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613812/09-aqm-min_oggx8u.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667345/09-aqm-min_oggx8u_ii53by.png"
                   alt=""
                   className="m-auto h-20 opacity-50  hover:opacity-100"
                 />
@@ -149,7 +149,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726680150/11-CIRCUITS_yw7ev7.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667377/11-CIRCUITS_yw7ev7_vgs6ec.png"
                   alt=""
                   className="m-auto h-40 opacity-50  hover:opacity-100"
                 />
@@ -160,20 +160,19 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613812/10-huaquian-min_fmrqby.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667416/10-huaquian-min_fmrqby_egdzqz.png"
                   alt=""
                   className="m-auto h-32 opacity-50  hover:opacity-100"
                 />
               </a>
 
               {/* segunda ronda */}
-
               <a
                 href="!#"
-                className="h-[300px] w-[400px] flex justify-center items-center content-center  "
+                className="h-[300px] w-[400px] flex justify-center items-center content-center"
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/01-MEDIIMAGEN-min_oenytz.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667075/01-MEDIIMAGEN-min_oenytz_pwa2dp.png"
                   alt=""
                   className="h-28  opacity-50  hover:opacity-100"
                 />
@@ -183,7 +182,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613810/02-JATSUMI-min_y0qf1h.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667103/02-JATSUMI-min_y0qf1h_spwzhk.png"
                   alt=""
                   className="m-auto h-60 opacity-50  hover:opacity-100"
                 />
@@ -194,7 +193,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613810/03-santofa-min_yof9pd.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667143/03-santofa-min_yof9pd_oskyxt.png"
                   alt=""
                   className="m-auto h-24 opacity-50  hover:opacity-100"
                 />
@@ -205,7 +204,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/04-OPTIDENT-min_sy4jqd.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667179/04-OPTIDENT-min_sy4jqd_dbgeus.png"
                   alt=""
                   className="m-auto h-40 opacity-50  hover:opacity-100"
                 />
@@ -216,7 +215,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/05-servomotion-min_jrdbum.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667208/05-servomotion-min_jrdbum_cmqgxq.png"
                   alt=""
                   className="m-auto h-20 opacity-50  hover:opacity-100"
                 />
@@ -227,7 +226,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/06-frankolmotors-min_fgpkpf.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667241/06-frankolmotors-min_fgpkpf_w8bxf6.png"
                   alt=""
                   className="m-auto h-32 opacity-50  hover:opacity-100"
                 />
@@ -237,7 +236,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613811/07-IDENTIGRAF-min_dblach.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667282/07-IDENTIGRAF-min_dblach_ptjvaf.png"
                   alt=""
                   className=" m-auto  h-20  opacity-50  hover:opacity-100"
                 />
@@ -248,7 +247,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613812/08-VERSUGAS-min_lclzkh.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667315/08-VERSUGAS-min_lclzkh_llxh9d.png"
                   alt=""
                   className="m-auto h-44 opacity-50  hover:opacity-100"
                 />
@@ -259,7 +258,7 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613812/09-aqm-min_oggx8u.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667345/09-aqm-min_oggx8u_ii53by.png"
                   alt=""
                   className="m-auto h-20 opacity-50  hover:opacity-100"
                 />
@@ -270,17 +269,18 @@ const Customer = () => {
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726680150/11-CIRCUITS_yw7ev7.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667377/11-CIRCUITS_yw7ev7_vgs6ec.png"
                   alt=""
                   className="m-auto h-40 opacity-50  hover:opacity-100"
                 />
               </a>
+
               <a
                 href="!#"
                 className="h-[300px] w-[400px] flex justify-center items-center content-center "
               >
                 <img
-                  src="https://res.cloudinary.com/dpjo9qurs/image/upload/v1726613812/10-huaquian-min_fmrqby.png"
+                  src="https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667416/10-huaquian-min_fmrqby_egdzqz.png"
                   alt=""
                   className="m-auto h-32 opacity-50  hover:opacity-100"
                 />

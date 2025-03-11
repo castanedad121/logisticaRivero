@@ -10,14 +10,14 @@ const services = [
     title: "Carga Marítima Internacional",
     description: "LCL, FCL, REEFER, Peligrosa - IMO",
     image:
-      "https://www.ulima.edu.pe/sites/default/files/ublog/img/transporte-maritimo_600x300.jpg",
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667833/Servicios_de_Log%C3%ADstica_Mar%C3%ADtima_Eficientes_y_C_bkxgn3.webp",
     logo: <RiShipLine className="size-8 text-white" />,
   },
   {
     title: "Carga Aérea Internacional",
     description: "Carga Aérea Consolidada, Back to Back",
     image:
-      "https://www.southexpress.pe/wp-content/uploads/2023/10/transporte-de-carga-aerea-internacional-South-Express.png",
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667730/transporte-de-carga-aerea-internacional-South-Express_xrsemp.png",
     logo: <GiAirplaneDeparture className="size-8 text-white" />,
   },
   {
@@ -25,14 +25,14 @@ const services = [
     description:
       "Contenedores, cargas sueltas, camión furgón, transporte internacional",
     image:
-      "https://www.southexpress.pe/wp-content/uploads/2022/10/TERRESTRE-1.jpg",
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667774/TERRESTRE-1_zlqdw2.jpg",
     logo: <LiaShippingFastSolid className="size-8 text-white" />,
   },
   {
     title: "Agenciamiento de Aduanas",
     description: "Trámites aduaneros rápidos y seguros",
     image:
-      "https://antaresaduanas.com.pe/new-web-preview/api-transmeridian/public/repository/subsections/portada-nosotrosx640.jpg",
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667870/agenciamientoaduana_aoeuyh.png",
     logo: <LuFiles className="size-8 text-white" />,
   },
   {
@@ -40,7 +40,7 @@ const services = [
     description:
       "Análisis de costos, optimización de márgenes y precios competitivos",
     image:
-      "https://www.ulima.edu.pe/sites/default/files/ublog/img/transporte-maritimo_600x300.jpg",
+      "https://res.cloudinary.com/dcsglrdgm/image/upload/v1741667952/transportation-and-logistics-of-container-cargo-ship-and-cargo-plane_mhkbcr.jpg",
     logo: <GrBarChart className="size-8 text-white" />,
   },
 ];
